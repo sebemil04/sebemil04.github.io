@@ -10,7 +10,7 @@ function clickCounter() {
         } else {
             localStorage.clickcount = 1;
         }
-        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+        document.getElementById("result").innerHTML = "du harsm maget ost " + localStorage.clickcount + " time(s).";
     } else {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
     }
@@ -21,6 +21,6 @@ function clickCounter() {
 <p><button onclick="clickCounter()" type="button">tryk for ost!</button></p>
 <div id="result"></div>
 <p>.</p>
-<p>ps den gemmer af sig selv (is not reset).</p>
+<p>ps den gemmer af sig selv.</p>
 </body>
 </html>
