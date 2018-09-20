@@ -8,7 +8,7 @@ function clickCounter() {
         if (localStorage.clickcount) {
             localStorage.clickcount = Number(localStorage.clickcount)+1;
         } else {
-            localStorage.clickcount = 10000;
+            localStorage.clickcount = 1;
         }
         document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
     } else {
@@ -20,7 +20,7 @@ function clickCounter() {
 <body>
 <p><button onclick="clickCounter()" type="button">tryk for ost!</button></p>
 <div id="result"></div>
-<p>Click the button to see the counter increase.</p>
-<p>Close the browser tab (or window), ps den gemmer af sig selv (is not reset).</p>
+<p>.</p>
+<p>ps den gemmer af sig selv (is not reset).</p>
 </body>
 </html>
