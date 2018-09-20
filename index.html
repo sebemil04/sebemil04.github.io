@@ -8,7 +8,7 @@ function clickCounter() {
         if (localStorage.clickcount) {
             localStorage.clickcount = Number(localStorage.clickcount)+1;
         } else {
-            localStorage.clickcount = 1;
+            localStorage.clickcount = 10000;
         }
         document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
     } else {
