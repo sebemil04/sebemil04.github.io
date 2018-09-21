@@ -17,7 +17,25 @@ function clickCounter() {
 </script>
 </head>
 <body>
-<p><button onclick="clickCounter()" type="button"></button></p>
+<p><button onclick="clickCounter()" type="button"><!DOCTYPE html>
+<html>
+<head>
+<script>
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "du har så meger " + localStorage.clickcount + " ost.";
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+</script>
+</head>
+<body></button></p>
 <div id="result"></div>
 <p>verhilset jordboger velkommen til ost clikker clik på osten får at få ost jo mere ost jo brere :)</p>
 <p>ps den gemmer</p>
