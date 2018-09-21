@@ -1,24 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script>
-function clickCounter() {
-    if(typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+1;
-        } else {
-            localStorage.clickcount = 1;
-        }
-        document.getElementById("result").innerHTML = "Du ejer så mager " + localStorage.clickcount + " ost.";
-    } else {
-        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-}
-</script>
-</head>
-<body>
-<p><button onclick="clickCounter()" type="button"><img src="data:image/jpeg;base64,https://www.google.dk/search?q=ost&rlz=1CALEAI_enDK810DK810&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQnqbcv8vdAhUR6KQKHSpiBY8Q_AUICigB&biw=1366&bih=649#
-    <div id="result"></div>
- <title>UnicornClicker2k18</title>
-    <body
-<body bgcolor="LightBLue">
+<div class="container">
+<h1><small>Incre</small>MENTAL!</h1>
+    <button id="click" type="button" class="btn btn-primary btn-lg btn-block"></button>
+    <hr>
+    <p>
+    Clicks: <span id="total_clicks">1</span><br />tryk for penge
+    Clicks per <small id="time_period">1.00</small> second: <span id="clicks_per_second">0</span>
+    </p>
+    <h3>Buy</h3>
+    <table class="table">
+        <tr>
+          <td>Autoclicker</td>
+          <td><span id="autoclicker_level">lvl 0</span></td>
+          <td><button id="buy_click" type="button" class="btn btn-success">Buy for 1</button></td>
+        </tr>
+        <tr>
+          <td>Speed up by 10%</td>
+          <td><span id="speed_level">lvl 0</span></td>
+          <td><button id="upgrade_speed" type="button" class="btn btn-success">Buy for 100</button></td>
+        </tr>
+        <tr>
+          <td>Increase Clicks Increment</td>
+          <td></td>
+          <td><button id="increase_clicks" type="button" class="btn btn-success">Buy for 100</button></td>
+        </tr>
+    </table>
+</div>
